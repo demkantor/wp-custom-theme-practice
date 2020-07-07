@@ -1,5 +1,24 @@
 <?php
 
+function demkantor_theme_support(){
+    add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'demkantor_theme_support');
+
+
+function demkantor_menus() {
+    $locations = array(
+        'primary' => 'Desktop Primary Left Sidebar',
+        'footer' => 'Footer Menu Items'
+    );
+
+    register_nav_menus($locations);
+}
+
+add_action('init', 'demkantor_menus');
+
+
 function demkantor_register_styles(){
 
     $version = wp_get_theme()->get( 'Version' );
