@@ -1,4 +1,5 @@
-## first attempt at WordPress custom themeing
+## WordPress custom themeing
+        this template is to be used for a blog site
 
 ### utalizing this theme
         download .zip
