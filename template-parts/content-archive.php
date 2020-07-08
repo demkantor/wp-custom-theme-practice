@@ -9,7 +9,7 @@
                 alt="image">
             <div class="media-body">
                 <h3 class="title mb-1">
-                    <a href="post.html">
+                    <a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
                     </a>
                 </h3>
